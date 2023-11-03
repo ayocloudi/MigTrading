@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mig Trading Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="trading-container">
+      <img src="C:\Users\ayomi\Downloads\SIG Project\logo.png" alt="Mig Trading Logo" id="mig-logo">
+        <h1>Mig Trading</h1>
+        <p>Stock Price: $<span id="stock-price">100</span></p>
+        <p>Your Balance: $<span id="balance">1000</span></p>
+        <p>Stocks Owned: <span id="stocks-owned">0</span></p>
+
+        <button onclick="buyStock()">Buy Stock</button>
+        <button onclick="sellStock()">Sell Stock</button>
+
+        <canvas id="stockChart" width="400" height="200"></canvas>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

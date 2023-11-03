@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #111;
+  color: #eee;
+}
+
+.trading-container {
+  background-color: #222;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  
+}
+
+body { /* or whichever parent container you have for .trading-container */
+  position: relative;
+}
+
+#mig-logo {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 80px;
+  height: auto;
+  z-index: 1000; /* to ensure the logo stays on top of other elements */
+}
+h1 {
+  text-align: center;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #388E3C;
+}
+
+button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #eee;
+}
+
+span {
+  color: #FFC107;
+  font-weight: bold;
+}
+#stockChart {
+  margin: 20px 0;
+}
